@@ -1,7 +1,19 @@
-let number = 4;
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
 
-console.log(number);
+const personalMoovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  private: false,
+};
 
-const answer = prompt("вам есть 18?", "18");
+const a = prompt("Один из последних просмотренных фильмов", ""),
+  b = prompt("На сколько его оцените?", ""),
+  c = prompt("Один из последних просмотренных фильмов", ""),
+  d = prompt("На сколько его оцените?", "");
 
-console.log(answer);
+personalMoovieDB.movies[a] = b;
+personalMoovieDB.movies[c] = d;
+
+console.log(personalMoovieDB);
